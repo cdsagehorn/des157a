@@ -14,20 +14,18 @@ body {
 
 #container {
     width: 100%;
-    min-width: 900px;
     max-width: 1200px;
-    height: 750px;
     margin: 0 auto;
     background-color: #063b67;
 }
 
 
-/* Header and Banner*/
+/* Header and Banner */
 
 header {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 220px;
     overflow: hidden;
     text-align: center;
 }
@@ -35,13 +33,14 @@ header {
 header h1 {
     position: absolute;
     z-index: 2;
-    top: 72px;
+    top: 55px;
     width: 100%;
     margin: 0;
+    padding: 0 15px;
     font-family: 'Fredoka', sans-serif;
-    font-size: 3.1em;
+    font-size: 1.65em;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.1;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -49,12 +48,14 @@ header h1 {
 header h2 {
     position: absolute;
     z-index: 2;
-    top: 142px;
+    top: 140px;
     width: 100%;
     margin: 0;
+    padding: 0 20px;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.3em;
+    font-size: 0.9em;
     font-weight: 600;
+    line-height: 1.4;
     color: #ffffff;
 }
 
@@ -63,7 +64,7 @@ header h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 250px;
+    height: 220px;
     overflow: hidden;
     background: linear-gradient(
         to bottom,
@@ -88,29 +89,29 @@ header h2 {
 }
 
 .portal-one {
-    top: -105px;
-    width: 430px;
-    height: 430px;
-    margin-left: -215px;
+    top: -40px;
+    width: 260px;
+    height: 260px;
+    margin-left: -130px;
     border: 5px solid #3aaed8;
     background-color: rgba(43, 217, 254, 0.08);
 }
 
 .portal-two {
-    top: -40px;
-    width: 300px;
-    height: 300px;
-    margin-left: -150px;
-    border: 8px solid #2bd9fe;
+    top: 5px;
+    width: 190px;
+    height: 190px;
+    margin-left: -95px;
+    border: 7px solid #2bd9fe;
     background-color: rgba(58, 174, 216, 0.12);
     animation: portal-pulse 4s ease-in-out infinite;
 }
 
 .portal-three {
-    top: 20px;
-    width: 180px;
-    height: 180px;
-    margin-left: -90px;
+    top: 45px;
+    width: 110px;
+    height: 110px;
+    margin-left: -55px;
     border: 4px solid #52aa8a;
     background-color: rgba(82, 170, 138, 0.14);
 }
@@ -141,20 +142,20 @@ header h2 {
 }
 
 
-/* Four-Column Main Layout */
+/* Mobile Main Layout */
 
 main {
     display: flex;
-    gap: 18px;
+    flex-direction: column;
+    gap: 16px;
     width: 100%;
-    height: 420px;
-    padding: 20px 24px;
+    padding: 20px;
     background-color: #063b67;
 }
 
 main section {
-    flex: 1;
-    height: 100%;
+    width: 100%;
+    min-width: 0;
     overflow: hidden;
     border-radius: 22px;
     background-color: #f6fbff;
@@ -162,7 +163,7 @@ main section {
 
 main section h2 {
     margin: 0;
-    padding: 1.25em 0.5em;
+    padding: 1em 0.5em;
     font-family: 'Fredoka', sans-serif;
     font-size: 1.35em;
     font-weight: 700;
@@ -207,7 +208,7 @@ main a {
     display: block;
     padding: 0.75em 0.25em;
     border-bottom: 1px solid #9fc9dc;
-    font-size: 0.9em;
+    font-size: 0.95em;
     font-weight: 600;
     text-decoration: none;
     color: #16324f;
@@ -238,7 +239,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80px;
+    padding: 25px 20px;
     text-align: center;
     color: #ffffff;
     background: linear-gradient(
@@ -250,7 +251,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 footer a {
@@ -261,4 +262,112 @@ footer a {
 
 footer a:hover {
     color: #f2a65a;
+}
+
+
+/* Tablet Layout */
+
+@media only screen and (min-width: 700px) {
+
+    header h1 {
+        top: 70px;
+        font-size: 2.6em;
+    }
+
+    header h2 {
+        top: 132px;
+        font-size: 1.1em;
+    }
+
+    main {
+        flex-flow: row wrap;
+    }
+
+    main section {
+        flex: 1 1 calc(50% - 8px);
+    }
+
+}
+
+
+/* Desktop Layout */
+
+@media only screen and (min-width: 1050px) {
+
+    #container {
+        height: 750px;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    #banner {
+        height: 250px;
+    }
+
+    header h1 {
+        top: 72px;
+        padding: 0;
+        font-size: 3.1em;
+        line-height: 1;
+    }
+
+    header h2 {
+        top: 142px;
+        padding: 0;
+        font-size: 1.3em;
+        line-height: normal;
+    }
+
+    .portal-one {
+        top: -105px;
+        width: 430px;
+        height: 430px;
+        margin-left: -215px;
+    }
+
+    .portal-two {
+        top: -40px;
+        width: 300px;
+        height: 300px;
+        margin-left: -150px;
+    }
+
+    .portal-three {
+        top: 20px;
+        width: 180px;
+        height: 180px;
+        margin-left: -90px;
+    }
+
+    main {
+        flex-flow: row nowrap;
+        gap: 18px;
+        height: 420px;
+        padding: 20px 24px;
+    }
+
+    main section {
+        flex: 1;
+        height: 100%;
+    }
+
+    main section h2 {
+        padding: 1.25em 0.5em;
+    }
+
+    main a {
+        font-size: 0.9em;
+    }
+
+    footer {
+        height: 80px;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
 }
