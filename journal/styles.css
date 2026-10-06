@@ -1,0 +1,99 @@
+/* General Page Styling */
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #16324f;
+    background-color: #fff9f2;
+}
+
+/* Header */
+
+header {
+    padding: 2em;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(
+        to right,
+        #16324f,
+        #3aaed8
+    );
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Main Content */
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 2em;
+}
+
+/* Journal Post */
+
+article {
+    padding: 2em;
+    border-left: 0.3em solid #52aa8a;
+    background-color: #ffffff;
+}
+
+article h2 {
+    margin-top: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.7em;
+    color: #16324f;
+}
+
+article h3 {
+    margin-top: 2em;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3em;
+    color: #388659;
+}
+
+article p {
+    max-width: 55ch;
+}
+
+/* Links */
+
+article a {
+    font-weight: 600;
+    color: #0c5e9d;
+}
+
+article a:hover {
+    color: #f2a65a;
+}
+
+/* Footer */
+
+footer {
+    padding: 2em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #16324f;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #f2a65a;
+}
