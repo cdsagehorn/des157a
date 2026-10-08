@@ -62,38 +62,40 @@ article h3 {
     color: #388659;
 }
 
-article p {
-    max-width: 55ch;
-}
-
-/* Links */
-
-article a {
-    font-weight: 600;
-    color: #0c5e9d;
-}
-
-article a:hover {
-    color: #f2a65a;
-}
-
 /* Footer */
 
 footer {
     padding: 2em;
     text-align: center;
     color: #ffffff;
-    background-color: #16324f;
+    background: linear-gradient(
+        to right,
+        #0c5e9d,
+        #16324f
+    );
 }
 
 footer p {
     margin: 0;
+    text-align: center;
 }
 
 footer a {
+    padding: 0.75em 1.5em;
+    border: 2px solid #65c5f4;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
     color: #ffffff;
+    background-color: #0c5e9d;
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease;
 }
 
 footer a:hover {
-    color: #f2a65a;
+    color: #16324f;
+    background-color: #f2a65a;
+    border-color: #f2a65a;
 }

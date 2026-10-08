@@ -22,15 +22,13 @@ body {
 header {
     position: relative;
     width: 100%;
-    height: 250px;
-    overflow: hidden;
+    height: 300px;
     text-align: center;
 }
 
 header h1 {
     position: absolute;
-    z-index: 2;
-    top: 72px;
+    top: 90px;
     width: 100%;
     margin: 0;
     font-family: 'Fredoka', sans-serif;
@@ -43,8 +41,7 @@ header h1 {
 
 header h2 {
     position: absolute;
-    z-index: 2;
-    top: 142px;
+    top: 155px;
     width: 100%;
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -58,8 +55,7 @@ header h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 250px;
-    overflow: hidden;
+    height: 300px;
     background: linear-gradient(
         to bottom,
         #167ec0,
@@ -74,63 +70,38 @@ header h2 {
     position: absolute;
     left: 50%;
     border-radius: 50%;
-    cursor: pointer;
     transition:
         transform 0.4s ease,
-        border-color 0.4s ease,
-        background-color 0.4s ease;
+        border-color 0.4s ease;
 }
 
 .portal-one {
-    top: -105px;
-    width: 430px;
-    height: 430px;
-    margin-left: -215px;
+    top: 5px;
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
     border: 5px solid #3aaed8;
-    background-color: rgba(43, 217, 254, 0.08);
 }
 
 .portal-two {
-    top: -40px;
-    width: 300px;
-    height: 300px;
-    margin-left: -150px;
-    border: 8px solid #2bd9fe;
-    background-color: rgba(58, 174, 216, 0.12);
-    animation: portal-pulse 4s ease-in-out infinite;
+    top: 40px;
+    width: 210px;
+    height: 210px;
+    margin-left: -105px;
+    border: 5px solid #2bd9fe;
 }
 
 .portal-three {
-    top: 20px;
-    width: 180px;
-    height: 180px;
-    margin-left: -90px;
-    border: 4px solid #52aa8a;
-    background-color: rgba(82, 170, 138, 0.14);
+    top: 75px;
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+    border: 5px solid #52aa8a;
 }
 
 .portal-shape:hover {
     transform: scale(1.08);
     border-color: #f2a65a;
-    background-color: rgba(242, 166, 90, 0.18);
-}
-
-/* Portal Animation */
-
-@keyframes portal-pulse {
-
-    0% {
-        opacity: 0.45;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.45;
-    }
-
 }
 
 /* Main Layout */
@@ -148,7 +119,6 @@ main {
 main section {
     flex: 1;
     height: 100%;
-    overflow: hidden;
     border-radius: 22px;
     background-color: #f6fbff;
 }
@@ -156,6 +126,7 @@ main section {
 main section h2 {
     margin: 0;
     padding: 1.25em 0.5em;
+    border-radius: 22px 22px 0 0;
     font-family: 'Fredoka', sans-serif;
     font-size: 1.35em;
     font-weight: 700;

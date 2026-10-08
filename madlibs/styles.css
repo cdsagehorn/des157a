@@ -6,53 +6,73 @@ body {
     font-size: 1em;
     line-height: 1.6;
     color: #16324f;
-    background-color: #fff9f2;
+    background-color: #052b4f;
 }
 
 /* Header */
 
 header {
-    padding: 2em;
+    padding: 3em 2em;
     text-align: center;
     color: #ffffff;
-    background-color: #16324f;
+    background: linear-gradient(
+        to bottom,
+        #167ec0,
+        #0c5e9d,
+        #16324f
+    );
 }
 
 header h1 {
     margin: 0;
     font-family: 'Fredoka', sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 header p {
-    margin-bottom: 0;
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 /* Main Content */
 
 main {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 2em;
+    background-color: #063b67;
 }
 
 /* Design Sections */
 
 section {
-    margin-bottom: 3em;
-    padding: 2em;
-    background-color: #ffffff;
+    margin-bottom: 2em;
+    border: 2px solid #65c5f4;
+    border-radius: 20px;
+    background-color: #f6fbff;
 }
 
 section h2 {
-    margin-top: 0;
+    margin: 0;
+    padding: 1em;
+    border-radius: 18px 18px 0 0;
     font-family: 'Fredoka', sans-serif;
-    font-size: 1.7em;
-    color: #16324f;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #073b6b;
+    background-color: #65c5f4;
 }
 
 section p {
-    max-width: 55ch;
+    margin: 0;
+    padding: 1.5em 2em;
+    font-weight: 600;
+    text-align: center;
 }
 
 /* Images */
@@ -61,7 +81,7 @@ section img {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 1em;
+    border-radius: 0 0 18px 18px;
 }
 
 /* Footer */
@@ -70,7 +90,11 @@ footer {
     padding: 2em;
     text-align: center;
     color: #ffffff;
-    background-color: #16324f;
+    background: linear-gradient(
+        to right,
+        #0c5e9d,
+        #16324f
+    );
 }
 
 footer p {
@@ -78,9 +102,21 @@ footer p {
 }
 
 footer a {
+    padding: 0.75em 1.5em;
+    border: 2px solid #65c5f4;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
     color: #ffffff;
+    background-color: #0c5e9d;
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease;
 }
 
 footer a:hover {
-    color: #f2a65a;
+    color: #16324f;
+    background-color: #f2a65a;
+    border-color: #f2a65a;
 }
