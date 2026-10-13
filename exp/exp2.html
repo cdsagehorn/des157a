@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="greeting">Experiment 2</h1>
+
+    <p id="message"></p>
+
+    <p id="choices"></p>
+
+    <script>
+        // This program asks the user for their name and favorite color, checks the color against a list, and changes the page based on their answers.
+
+        var yourName = prompt("What is your name?", "");
+        var yourColor = prompt("Choose a favorite color: red, blue, green, or yellow", "");
+
+        var colors = ["red", "blue", "green", "yellow"];
+
+        function makeGreeting( name ){
+
+            var greeting;
+
+            if(name == null || name == ''){
+                greeting = "Hello!";
+
+            } else {
+                greeting = `Hello ${name}!`;
+            }
+
+            return greeting;
+        }
+
+        function checkColor( color, choices ){
+
+            var result = "none";
+
+            if(color == null || color == ''){
+                result = "none";
+
+            } else {
+                var lowerColor = color.toLowerCase();
+
+                for( var i=0; i<choices.length; i++){
+
+                    if(lowerColor == choices[i]){
+                        result = choices[i];
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        function showPage( name, color, choices ){
+
+            var greeting = makeGreeting(name);
+            var selectedColor = checkColor(color, choices);
+
+            document.querySelector('#greeting').innerHTML = greeting;
+
+            if(selectedColor == "none"){
+                document.querySelector('#message').innerHTML =
+                    "That color was not one of the choices.";
+
+            } else {
+                document.querySelector('body').style.backgroundColor = selectedColor;
+
+                document.querySelector('#message').innerHTML =
+                    `You chose ${selectedColor} as your favorite color.`;
+            }
+
+            document.querySelector('#choices').innerHTML =
+                "The color choices were red, blue, green, and yellow.";
+        }
+
+        showPage(yourName, yourColor, colors);
+    </script>
+
+</body>
+
+</html>
