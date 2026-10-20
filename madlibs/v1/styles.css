@@ -1,0 +1,185 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0b2f55;
+    background: linear-gradient(#0d6fa9, #064b7a, #052b4f);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    margin: auto;
+    padding: 1em 2em 0.5em;
+    color: #ffffff;
+}
+
+header img {
+    margin-right: 1.5em;
+}
+
+header section {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.6em;
+    line-height: 1;
+}
+
+h1 span {
+    display: block;
+    color: #ffe36e;
+}
+
+header p {
+    margin: 0.4em 0 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+main {
+    max-width: 950px;
+    margin: auto;
+    padding: 0.5em 2em 1em;
+}
+
+
+/* Form */
+
+.form-view,
+.report-view {
+    max-width: 800px;
+    margin: auto;
+    padding: 1.25em 2em;
+    border: 3px solid #65c5f4;
+    border-radius: 25px;
+    background-color: #f6fbff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.form-view h2 {
+    margin: 0 0 0.75em;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    color: #0b5c91;
+}
+
+.form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form p {
+    width: 47%;
+    margin: 0 0 0.65em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+}
+
+input[type='text'],
+input[type='number'] {
+    width: 90%;
+    padding: 0.4em 0.6em;
+    border: 2px solid #0b5c91;
+    border-radius: 7px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    color: #0b2f55;
+    background-color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+    border-color: #18bfc3;
+    outline: 2px dashed #0b5c91;
+    background-color: #eefcff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+input[type='submit'],
+.report-view button {
+    display: block;
+    margin: 0.75em auto 0;
+    padding: 0.65em 1.6em;
+    border: 3px solid #0b2f55;
+    border-radius: 18px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #073b6b;
+    background-color: #55ddd4;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+input[type='submit']:hover,
+.report-view button:hover {
+    transform: scale(1.05);
+    background-color: #ffe36e;
+}
+
+
+/* Mission Report */
+
+.report-view h2 {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    color: #d9a800;
+}
+
+.report-subtitle {
+    margin: 0.2em 0 0.8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.report-view article {
+    padding: 1em 1.5em;
+    border-radius: 18px;
+    background-color: #ffffff;
+}
+
+.report-view article p {
+    margin: 0 0 0.7em;
+}
+
+.report-view article p:last-child {
+    margin-bottom: 0;
+}
+
+.user-word {
+    padding: 0.05em 0.3em;
+    border-radius: 5px;
+    color: #073b6b;
+    background-color: #c9ecff;
+}
+
+.report-view button {
+    background-color: #ffe36e;
+}
+
+.report-view button:hover {
+    background-color: #55ddd4;
+}
+
+
+/* Show and Hide Views */
+
+.hidden {
+    display: none;
+}

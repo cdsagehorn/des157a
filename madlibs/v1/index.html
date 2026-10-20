@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Worst Space Mission Ever</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/space-planet.png"
+            width="180"
+            height="120"
+            alt="Illustration of a spaceship traveling through space">
+
+        <section>
+            <h1>The Worst <span>Space Mission Ever</span></h1>
+            <p>Create your own disastrous space mission!</p>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- Form View -->
+        <section class="form-view">
+
+            <h2>Mission Details</h2>
+
+            <form>
+
+                <div class="form-fields">
+
+                    <p>
+                        <label for="person-name">Person's Name:</label>
+                        <input type="text" id="person-name" required>
+                    </p>
+
+                    <p>
+                        <label for="adjective">Adjective:</label>
+                        <input type="text" id="adjective" required>
+                    </p>
+
+                    <p>
+                        <label for="animal">Animal:</label>
+                        <input type="text" id="animal" required>
+                    </p>
+
+                    <p>
+                        <label for="number">Number:</label>
+                        <input type="number" id="number" required>
+                    </p>
+
+                    <p>
+                        <label for="food">Type of Food:</label>
+                        <input type="text" id="food" required>
+                    </p>
+
+                    <p>
+                        <label for="verb">Verb ending in "-ing":</label>
+                        <input type="text" id="verb" required>
+                    </p>
+
+                    <p>
+                        <label for="place">Place:</label>
+                        <input type="text" id="place" required>
+                    </p>
+
+                    <p>
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" required>
+                    </p>
+
+                    <p>
+                        <label for="plural-noun">Plural Noun:</label>
+                        <input type="text" id="plural-noun" required>
+                    </p>
+
+                    <p>
+                        <label for="exclamation">Exclamation:</label>
+                        <input type="text" id="exclamation" required>
+                    </p>
+
+                </div>
+
+                <input type="submit" value="Create Mission">
+
+            </form>
+
+        </section>
+
+        <!-- Mission Report View -->
+        <section class="report-view hidden">
+
+            <h2>Mission Report</h2>
+            <p class="report-subtitle">The worst space mission ever</p>
+
+            <article>
+
+                <p>
+                    Captain <strong class="user-word">Alex</strong> had been chosen to lead
+                    the most <strong class="user-word">crazy</strong> space mission in
+                    history. Everything was going according to plan until a giant
+                    <strong class="user-word">giraffe</strong> suddenly appeared outside
+                    the spaceship.
+                </p>
+
+                <p>
+                    The crew only had <strong class="user-word">5</strong> minutes to
+                    figure out what to do. In a panic, someone grabbed a container of
+                    <strong class="user-word">pizza</strong> and launched it out of the
+                    airlock.
+                </p>
+
+                <p>
+                    While everyone was <strong class="user-word">dancing</strong>, the
+                    spaceship suddenly changed direction and started flying toward
+                    <strong class="user-word">Mars</strong>.
+                </p>
+
+                <p>
+                    Without warning, every light turned
+                    <strong class="user-word">purple</strong>, and
+                    <strong class="user-word">aliens</strong> started flying around the
+                    cabin. Captain Alex looked at the crew and shouted,
+                    "<strong class="user-word">Yikes!</strong>"
+                </p>
+
+                <p>
+                    Somehow, the crew survived the mission. Nobody could explain what
+                    happened, but they all agreed on one thing: they were never going
+                    to space again!
+                </p>
+
+            </article>
+
+            <button type="button">Play Again</button>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
