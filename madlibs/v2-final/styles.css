@@ -10,18 +10,24 @@ body {
     background: linear-gradient(#0d6fa9, #064b7a, #052b4f);
 }
 
+
+/* Header */
+
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 950px;
-    margin: auto;
-    padding: 1em 2em 0.5em;
+    margin: 0 auto;
+    padding: 1em;
     color: #ffffff;
 }
 
 header img {
-    margin-right: 1.5em;
+    width: 140px;
+    height: auto;
+    margin-bottom: 0.5em;
+    animation: float 3s infinite;
 }
 
 header section {
@@ -31,7 +37,7 @@ header section {
 h1 {
     margin: 0;
     font-family: 'Fredoka', sans-serif;
-    font-size: 2.6em;
+    font-size: 2em;
     line-height: 1;
 }
 
@@ -42,28 +48,28 @@ h1 span {
 
 header p {
     margin: 0.4em 0 0;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
 }
 
+
+/* Main */
+
 main {
     flex: 1;
-    width: 100%;
-    max-width: 950px;
-    margin: auto;
-    padding: 0.5em 2em 1em;
+    margin: 0 1em;
+    padding: 0.5em 0 1em;
 }
 
 
-/* Form */
+/* Form and Report */
 
 .form-view,
 .report-view {
-    max-width: 800px;
     margin: auto;
-    padding: 1.25em 2em;
+    padding: 1em;
     border: 3px solid #65c5f4;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #f6fbff;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
@@ -77,13 +83,12 @@ main {
 
 .form-fields {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 form p {
-    width: 47%;
-    margin: 0 0 0.65em;
+    width: 100%;
+    margin: 0 0 0.75em;
 }
 
 label {
@@ -95,7 +100,7 @@ label {
 input[type='text'],
 input[type='number'] {
     width: 90%;
-    padding: 0.4em 0.6em;
+    padding: 0.5em 0.6em;
     border: 2px solid #0b5c91;
     border-radius: 7px;
     font-family: 'Nunito Sans', sans-serif;
@@ -118,7 +123,7 @@ input[type='number']:focus {
 
 input[type='submit'] {
     display: block;
-    margin: 0.75em auto 0;
+    margin: 1em auto 0;
     padding: 0.65em 1.6em;
     border: 3px solid #0b5c91;
     border-radius: 18px;
@@ -142,7 +147,7 @@ input[type='submit']:hover {
 .report-view h2 {
     margin: 0;
     font-family: 'Fredoka', sans-serif;
-    font-size: 2.2em;
+    font-size: 2em;
     text-align: center;
     color: #d9a800;
 }
@@ -154,7 +159,7 @@ input[type='submit']:hover {
 }
 
 .report-view article {
-    padding: 1em 1.5em;
+    padding: 1em;
     border-radius: 18px;
     background-color: #ffffff;
 }
@@ -176,7 +181,7 @@ input[type='submit']:hover {
 
 .report-view button {
     display: block;
-    margin: 0.75em auto 0;
+    margin: 1em auto 0;
     padding: 0.65em 1.6em;
     border: 3px solid #0b2f55;
     border-radius: 18px;
@@ -226,4 +231,87 @@ footer {
 .menu-link:hover {
     transform: scale(1.05);
     background-color: #ffe36e;
+}
+
+
+/* Animation */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Desktop Layout */
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        max-width: 950px;
+        padding: 1em 2em 0.5em;
+    }
+
+    header img {
+        width: 180px;
+        margin-right: 1.5em;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 2.6em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    main {
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 0.5em 2em 1em;
+    }
+
+    .form-view,
+    .report-view {
+        max-width: 800px;
+        padding: 1.25em 2em;
+        border-radius: 25px;
+    }
+
+    .form-fields {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    form p {
+        width: 47%;
+        margin: 0 0 0.65em;
+    }
+
+    input[type='text'],
+    input[type='number'] {
+        padding: 0.4em 0.6em;
+    }
+
+    .report-view h2 {
+        font-size: 2.2em;
+    }
+
+    .report-view article {
+        padding: 1em 1.5em;
+    }
+
 }
