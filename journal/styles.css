@@ -43,6 +43,7 @@ main {
 /* Journal Post */
 
 article {
+    margin-bottom: 2em;
     padding: 2em;
     border-left: 0.3em solid #52aa8a;
     background-color: #ffffff;
