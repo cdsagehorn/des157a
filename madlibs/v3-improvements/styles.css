@@ -1,0 +1,331 @@
+
+/* General Styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0b2f55;
+    background-color: #052b4f;
+    background-image: url('images/space-stars.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em;
+    color: #ffffff;
+}
+
+header img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 0.5em;
+    animation: float 3s infinite;
+}
+
+header section {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2em;
+    line-height: 1;
+}
+
+h1 span {
+    display: block;
+    color: #ffe36e;
+}
+
+header p {
+    margin: 0.4em 0 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/* Main */
+
+main {
+    flex: 1;
+    margin: 0 1em;
+    padding: 0.5em 0 1em;
+}
+
+
+/* Form and Report */
+
+.form-view,
+.report-view {
+    margin: auto;
+    padding: 1em;
+    border: 3px solid #65c5f4;
+    border-radius: 20px;
+    background-color: #f6fbff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.form-view h2 {
+    margin: 0 0 0.75em;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    color: #0b5c91;
+}
+
+
+/* Form Instructions */
+
+.form-instructions {
+    margin: 0 0 1em;
+    font-size: 0.95em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    width: 100%;
+    margin: 0 0 0.75em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+}
+
+input[type='text'],
+input[type='number'] {
+    width: 90%;
+    padding: 0.5em 0.6em;
+    border: 2px solid #0b5c91;
+    border-radius: 7px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    color: #0b2f55;
+    background-color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+    border-color: #18bfc3;
+    outline: 2px dashed #0b5c91;
+    background-color: #eefcff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Create Mission Button */
+
+input[type='submit'] {
+    display: block;
+    margin: 1em auto 0;
+    padding: 0.65em 1.6em;
+    border: 3px solid #0b5c91;
+    border-radius: 18px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #073b6b;
+    background-color: #55ddd4;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+input[type='submit']:hover {
+    transform: scale(1.05);
+    background-color: #ffe36e;
+}
+
+
+/* Mission Report */
+
+.report-view h2 {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #d9a800;
+}
+
+.report-subtitle {
+    margin: 0.2em 0 0.8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.report-view article {
+    padding: 1em;
+    border-radius: 18px;
+    background-color: #ffffff;
+}
+
+.report-view article p {
+    margin: 0 0 0.7em;
+}
+
+.report-view article p:last-child {
+    margin-bottom: 0;
+}
+
+.user-word {
+    padding: 0.05em 0.3em;
+    border-radius: 5px;
+    color: #073b6b;
+    background-color: #c9ecff;
+}
+
+.report-view button {
+    display: block;
+    margin: 1em auto 0;
+    padding: 0.65em 1.6em;
+    border: 3px solid #0b2f55;
+    border-radius: 18px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #073b6b;
+    background-color: #ffe36e;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.report-view button:hover {
+    transform: scale(1.05);
+    background-color: #55ddd4;
+}
+
+
+/* Show and Hide Views */
+
+.hidden {
+    display: none;
+}
+
+
+/* Back to Menu */
+
+footer {
+    text-align: center;
+    padding: 0.75em 1em 1em;
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 0.6em 1.4em;
+    border: 3px solid #0b2f55;
+    border-radius: 18px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #073b6b;
+    background-color: #55ddd4;
+    transition: all 0.25s ease;
+}
+
+.menu-link:hover {
+    transform: scale(1.05);
+    background-color: #ffe36e;
+}
+
+
+/* Animation */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Desktop Layout */
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        max-width: 950px;
+        padding: 1em 2em 0.5em;
+    }
+
+    header img {
+        width: 180px;
+        margin-right: 1.5em;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 2.6em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    main {
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 0.5em 2em 1em;
+    }
+
+    .form-view,
+    .report-view {
+        max-width: 800px;
+        padding: 1.25em 2em;
+        border-radius: 25px;
+    }
+
+    .form-fields {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    form p {
+        width: 47%;
+        margin: 0 0 0.65em;
+    }
+
+    input[type='text'],
+    input[type='number'] {
+        padding: 0.4em 0.6em;
+    }
+
+    .report-view h2 {
+        font-size: 2.2em;
+    }
+
+    .report-view article {
+        padding: 1em 1.5em;
+    }
+
+}
