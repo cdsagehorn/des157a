@@ -1,3 +1,4 @@
+
 /* General Page Styling */
 
 body {
@@ -61,6 +62,25 @@ article h3 {
     font-family: 'Fredoka', sans-serif;
     font-size: 1.3em;
     color: #388659;
+}
+
+/* Visual Thinking Images */
+
+article figure {
+    margin: 1.5em 0;
+}
+
+article figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+article figcaption {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #16324f;
 }
 
 /* Footer */
