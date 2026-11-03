@@ -1,0 +1,206 @@
+/* General page styles */
+
+body {
+    background-color: #f0ede5;
+    color: #29251f;
+    font-family: Georgia, serif;
+}
+
+header {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 20px 8px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+.introduction {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.instructions {
+    margin: 12px 0 14px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+/* Photograph arrangement */
+
+.memory-stage {
+    position: relative;
+    width: 95%;
+    max-width: 1050px;
+    height: 455px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #c2b8a4;
+    background-color: #d9d0bf;
+}
+
+.memory-card {
+    position: absolute;
+    width: 22%;
+    min-width: 150px;
+    padding: 8px 8px 12px;
+    border: 0;
+    background-color: #fffdf9;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 0.72;
+    transition: filter 500ms, opacity 500ms, transform 500ms;
+}
+
+.memory-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.memory-card span {
+    display: block;
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* Position each photograph */
+
+#backpack {
+    top: 8%;
+    left: 5%;
+    transform: rotate(-8deg);
+}
+
+#school {
+    top: 25%;
+    left: 23%;
+    transform: rotate(7deg);
+}
+
+#essentials {
+    top: 5%;
+    left: 43%;
+    transform: rotate(-5deg);
+}
+
+#note {
+    top: 26%;
+    left: 61%;
+    transform: rotate(8deg);
+}
+
+#technology {
+    top: 8%;
+    left: 77%;
+    width: 18%;
+    transform: rotate(-7deg);
+}
+
+
+/* Reveal the photographs on hover */
+
+.memory-card:hover,
+.memory-card:focus {
+    z-index: 2;
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+
+/* Memory hint below photographs */
+
+#memory-hint {
+    min-height: 2em;
+    margin: 15px auto;
+    padding: 0 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* Experiment reflection */
+
+.experiment-notes {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.experiment-notes h2 {
+    font-size: 1.3rem;
+}
+
+
+/* Hidden and visible overlay classes */
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: flex;
+}
+
+
+/* Memory overlay */
+
+#overlay {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
+.story-panel {
+    width: 75%;
+    max-width: 530px;
+    padding: 28px;
+    background-color: #fffdf8;
+    box-shadow: 0 5px 24px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+}
+
+#close {
+    float: right;
+    padding: 7px 13px;
+    border: 1px solid #29251f;
+    background-color: #fffdf8;
+    cursor: pointer;
+}
+
+.story-label {
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.story-panel h2 {
+    font-size: 1.8rem;
+}

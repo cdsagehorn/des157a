@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What My Backpack Remembers - Experiment</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <p class="eyebrow">Every Picture / Visual Experiment</p>
+
+        <h1>What My Backpack Remembers</h1>
+
+        <p class="introduction">
+            A collection of ordinary things that carry memories,
+            responsibilities, and pieces of who I am.
+        </p>
+    </header>
+
+    <main>
+
+        <p class="instructions">
+            Move over a photograph to bring a memory into focus.
+            Click it to discover its story.
+        </p>
+
+        <!-- Five overlapping photographs -->
+
+        <section class="memory-stage" aria-label="Five photographs arranged as overlapping memories">
+
+            <!-- Photograph 1: Backpack -->
+
+            <button id="backpack" class="memory-card" type="button">
+                <img src="images/backpack.jpg"
+                    alt="My open backpack with books and supplies inside"
+                    width="600" height="600">
+
+                <span>The backpack</span>
+            </button>
+
+            <!-- Photograph 2: School and work -->
+
+            <button id="school" class="memory-card" type="button">
+                <img src="images/school-work.jpg"
+                    alt="My school and work materials, including a notebook and laptop"
+                    width="600" height="600">
+
+                <span>School and work</span>
+            </button>
+
+            <!-- Photograph 3: Everyday essentials -->
+
+            <button id="essentials" class="memory-card" type="button">
+                <img src="images/essentials.jpg"
+                    alt="My everyday essentials, including keys, wallet, and AirPods"
+                    width="600" height="600">
+
+                <span>Everyday essentials</span>
+            </button>
+
+            <!-- Photograph 4: Orientation note -->
+
+            <button id="note" class="memory-card" type="button">
+                <img src="images/orientation-note.jpg"
+                    alt="An orange handwritten motivational note from Aggie Orientation"
+                    width="600" height="600">
+
+                <span>A reminder to myself</span>
+            </button>
+
+            <!-- Photograph 5: Technology -->
+
+            <button id="technology" class="memory-card" type="button">
+                <img src="images/technology.jpg"
+                    alt="My headphones and personal technology setup"
+                    width="600" height="600">
+
+                <span>Personal space</span>
+            </button>
+
+        </section>
+
+        <!-- Text changes when hovering over photographs -->
+
+        <p id="memory-hint">
+            These objects look ordinary until you remember why you kept them.
+        </p>
+
+        <!-- Reflection on the experiment -->
+
+        <section class="experiment-notes">
+
+            <h2>About this experiment</h2>
+
+            <p>
+                I am exploring the basic positioning and overlays
+                approach using five of my own photographs. I layered
+                the images like scattered memories and used grayscale
+                filters and hover interactions to bring each object
+                into focus. Clicking a photograph opens an overlay
+                with the memory or responsibility connected to it.
+            </p>
+
+            <p>
+                By combining overlapping photographs, changing image
+                filters, and story overlays, I wanted to explore how
+                interaction can make ordinary objects more meaningful.
+                For my next version, I want to experiment with
+                selecting objects directly inside the backpack
+                photograph to reveal their stories.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Hidden overlay that reveals each memory -->
+
+    <div id="overlay" class="hidden">
+
+        <section class="story-panel" aria-label="Memory description">
+
+            <button id="close" type="button">
+                Close
+            </button>
+
+            <p class="story-label">
+                What this object remembers
+            </p>
+
+            <h2 id="story-title">
+                A memory
+            </h2>
+
+            <p id="story-text">
+                A story about an everyday object.
+            </p>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
