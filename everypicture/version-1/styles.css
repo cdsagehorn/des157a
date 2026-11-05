@@ -1,0 +1,330 @@
+
+/* General styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f6f1e8;
+    color: #1d3545;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka', Arial, sans-serif;
+    line-height: 1.15;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* Page introduction */
+
+.page-header {
+    padding: 48px 20px 36px;
+    background-color: #1d3545;
+    color: #fffaf0;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+h1 {
+    max-width: 840px;
+    margin: 0 auto 18px;
+    font-size: 3rem;
+}
+
+.introduction {
+    max-width: 630px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+
+/* Backpack photograph and navigation */
+
+.backpack-story {
+    width: 92%;
+    max-width: 1120px;
+    margin: 35px auto 60px;
+}
+
+.backpack-image {
+    margin: 0;
+    padding: 12px;
+    background-color: #fffdf8;
+    border: 1px solid #d9cbb8;
+}
+
+.backpack-image img {
+    width: 100%;
+    filter: grayscale(28%);
+    transition: filter 0.4s;
+}
+
+.backpack-image:hover img {
+    filter: grayscale(0%);
+}
+
+.backpack-image figcaption {
+    padding: 10px 3px 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.memory-navigation {
+    padding: 30px 5px;
+}
+
+.memory-navigation h2 {
+    margin: 0 0 14px;
+    font-size: 2.2rem;
+}
+
+.memory-navigation p {
+    margin-top: 0;
+}
+
+.memory-navigation ol {
+    margin: 22px 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.memory-navigation li {
+    margin-bottom: 9px;
+}
+
+.memory-navigation a {
+    display: block;
+    padding: 12px 14px;
+    border: 1px solid #b9c7ce;
+    background-color: #fffdf8;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.memory-navigation a:hover,
+.memory-navigation a:focus {
+    background-color: #d3e6e9;
+}
+
+.memory-navigation a span {
+    margin-right: 14px;
+    color: #a85029;
+    font-family: 'Fredoka', Arial, sans-serif;
+}
+
+.memory-navigation .navigation-note {
+    color: #4b6271;
+    font-size: 0.85rem;
+}
+
+
+/* Memory collection */
+
+.memory-collection {
+    padding: 55px 4% 65px;
+    background-color: #e7e8e2;
+}
+
+.section-heading {
+    max-width: 740px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 8px;
+    font-size: 2.5rem;
+}
+
+.section-heading p:last-child {
+    margin: 0;
+}
+
+
+/* Individual memory cards */
+
+.memory-card {
+    max-width: 1050px;
+    margin: 0 auto 30px;
+    padding: 14px;
+    background-color: #fffdf8;
+    border: 1px solid #d8d7d0;
+}
+
+.memory-card figure {
+    margin: 0;
+}
+
+.memory-card img {
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.78;
+    transition: filter 0.4s, opacity 0.4s;
+}
+
+.memory-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.memory-card figcaption {
+    margin-top: 9px;
+    color: #58666b;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* Memory descriptions */
+
+.memory-text {
+    padding: 20px 12px 24px;
+}
+
+.memory-number {
+    margin: 0;
+    color: #a85029;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.memory-text h3 {
+    margin: 6px 0 12px;
+    font-size: 2rem;
+}
+
+.memory-text p {
+    max-width: 470px;
+    margin: 0 0 20px;
+}
+
+.memory-text a {
+    color: #205d6f;
+    font-weight: 700;
+}
+
+
+/* Overlay states for JavaScript in version 2 */
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: flex;
+}
+
+#overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 23, 30, 0.85);
+}
+
+.story-panel {
+    width: 100%;
+    max-width: 540px;
+    padding: 30px;
+    background-color: #fffdf8;
+}
+
+.story-panel h2 {
+    font-size: 2rem;
+}
+
+.overlay-note {
+    color: #54636b;
+    font-size: 0.85rem;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 35px 20px;
+    background-color: #1d3545;
+    color: #fffaf0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 8px;
+}
+
+
+/* Desktop layout */
+
+@media (min-width: 800px) {
+
+    .page-header {
+        padding: 68px 20px 56px;
+    }
+
+    h1 {
+        font-size: 4.6rem;
+    }
+
+    .backpack-story {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 50px;
+        align-items: center;
+        margin-top: 65px;
+    }
+
+    .memory-navigation {
+        padding: 20px 0;
+    }
+
+    .memory-navigation h2 {
+        font-size: 3rem;
+    }
+
+    .memory-card {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 35px;
+        align-items: center;
+        padding: 22px;
+        margin-bottom: 28px;
+    }
+
+    .memory-text {
+        padding: 25px;
+    }
+
+    .memory-text h3 {
+        font-size: 2.5rem;
+    }
+}
