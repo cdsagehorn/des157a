@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What My Backpack Remembers | Every Picture Final</title>
+
+    <!-- External stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <p>DES 157A / EVERY PICTURE</p>
+        <a href="../../index.html">Back to my portal</a>
+    </header>
+
+    <main>
+
+        <!-- Introduction to the personal story -->
+        <section class="introduction">
+            <p class="eyebrow">A personal archive / Studio 02</p>
+
+            <h1>What My <span>Backpack</span> Remembers.</h1>
+
+            <p>
+                A backpack can look ordinary from the outside.
+                But the things I carry say something about what
+                I care about, the responsibilities I balance,
+                and the memories that keep me going.
+            </p>
+        </section>
+
+        <!-- Interactive backpack experience -->
+        <section class="unpacking-section">
+
+            <header class="section-heading">
+                <p class="eyebrow">01 / Unpack the story</p>
+
+                <h2>What's inside?</h2>
+
+                <p>
+                    Click my backpack to unpack four pieces of
+                    my everyday life. The bag itself has a story,
+                    too. Hover over each photograph and click it
+                    to discover the personal meaning behind it.
+                </p>
+            </header>
+
+            <div id="stage" class="stage">
+
+                <!-- Original backpack photograph -->
+                <button id="open-bag" class="backpack-button" type="button">
+                    <img src="images/backpack.jpg"
+                        alt="My open backpack with the things I carry each day"
+                        width="600" height="600">
+
+                    <span>Click to unpack my backpack</span>
+                </button>
+
+                <!-- Empty backpack photograph -->
+                <figure class="empty-backpack">
+                    <img src="images/emptybackpack.jpg"
+                        alt="My backpack after its belongings have been removed"
+                        width="900" height="1200">
+                </figure>
+
+                <!-- Backpack's own story -->
+                <button id="bag-story" class="bag-story-button" type="button">
+                    Read the backpack story
+                </button>
+
+                <!-- School and work -->
+                <button id="school" class="item-card item-school" type="button">
+                    <img src="images/school-work.jpg"
+                        alt="My school notebooks and other work materials"
+                        width="600" height="600">
+
+                    <span>01 / School &amp; work</span>
+                </button>
+
+                <!-- Everyday essentials -->
+                <button id="essentials" class="item-card item-essentials" type="button">
+                    <img src="images/essentials.jpg"
+                        alt="My wallet, keys, and AirPods"
+                        width="600" height="600">
+
+                    <span>02 / Everyday essentials</span>
+                </button>
+
+                <!-- Motivational note -->
+                <button id="note" class="item-card item-note" type="button">
+                    <img src="images/orientation-note.jpg"
+                        alt="An orange motivational note from Aggie Orientation"
+                        width="600" height="600">
+
+                    <span>03 / A reminder</span>
+                </button>
+
+                <!-- Personal technology -->
+                <button id="technology" class="item-card item-technology" type="button">
+                    <img src="images/technology.jpg"
+                        alt="My headphones and personal technology setup"
+                        width="600" height="600">
+
+                    <span>04 / Personal space</span>
+                </button>
+
+                <!-- Reset the experience -->
+                <button id="reset-bag" class="reset-button" type="button">
+                    Pack everything away
+                </button>
+
+            </div>
+
+            <p id="memory-hint" class="memory-hint">
+                Start by clicking the backpack photograph.
+            </p>
+
+        </section>
+
+        <!-- Reusable story overlay -->
+        <div id="overlay" class="hidden">
+
+            <article class="story-panel">
+
+                <button id="close" type="button">
+                    Close story ×
+                </button>
+
+                <figure>
+                    <img id="story-image"
+                        src="images/school-work.jpg"
+                        alt="School and work materials"
+                        width="600" height="600">
+
+                    <figcaption id="story-label">
+                        01 / School &amp; work
+                    </figcaption>
+                </figure>
+
+                <div class="story-copy">
+                    <p class="eyebrow">
+                        A little more than an object
+                    </p>
+
+                    <h2 id="story-title">
+                        School and work
+                    </h2>
+
+                    <p id="story-text">
+                        This object's personal story appears here.
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- Closing reflection -->
+        <section class="closing-section">
+
+            <p class="eyebrow">The little things add up</p>
+
+            <h2>What we carry helps tell our story.</h2>
+
+            <p>
+                These objects may seem ordinary, but each reflects
+                a part of my daily life. Opening the backpack is
+                a way of discovering the experiences that aren't
+                visible at first glance.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>What My Backpack Remembers / DES 157A / Fall 2026</p>
+
+        <a href="../../index.html">
+            Return to my class portal
+        </a>
+    </footer>
+
+</body>
+
+</html>
