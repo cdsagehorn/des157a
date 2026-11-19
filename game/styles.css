@@ -1,0 +1,105 @@
+/* Game On! Design V1 - presentation page */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #16324f;
+    background-color: #f7f5f0;
+}
+
+/* Header */
+
+header {
+    padding: 36px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #16324f;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Fredoka', Arial, sans-serif;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1.1em;
+}
+
+/* Design process sections */
+
+main {
+    max-width: 1120px;
+    margin: auto;
+    padding: 24px;
+}
+
+section {
+    margin-bottom: 32px;
+    padding: 28px;
+    border: 1px solid #e2e5e8;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+section h2 {
+    margin: 0 0 10px;
+    font-family: 'Fredoka', Arial, sans-serif;
+    font-size: 1.65em;
+    color: #16324f;
+}
+
+section p {
+    margin: 0 0 18px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #536477;
+}
+
+/* Links and footer */
+
+.back-link {
+    margin: 26px 0 36px;
+    text-align: center;
+}
+
+a {
+    color: #135e95;
+}
+
+a:hover {
+    color: #bb272f;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #16324f;
+}
+
+footer p {
+    margin: 0;
+}
